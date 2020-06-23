@@ -1,0 +1,65 @@
+/*  Formatting for the container holding each card */
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+/*  Adds images for each project  */
+.project1 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+.project2 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+.project3 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+.project4 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+.project5 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+.project6 {
+    background-image: url(https://via.placeholder.com/300);
+}
+
+/*  Fixed sizes for each card image  */
+.card-image {
+    width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0 20px 0;
+}
+
+/*  Formatting for the text bar across the image  */
+.card-title {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/*  Changes card positioning for larger screens */
+@media (min-width: 768px) {
+    .projects {
+        justify-content: space-between;
+    }
+}
