@@ -17,21 +17,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="nav navbar-brand align-items-center" >
                 <span class="nav">Chris Zarlengo</span>
             </div>
             <ul class="nav nav-links align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About</a>
+                    <a class="nav-link" href="index.html">About</a>
                 </li>
                 <span class="nav-spacer">|</span>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <span class="nav-spacer">|</span>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -44,12 +44,12 @@
         </section>
         <hr>
         <div class="contact-content">
-            <form id="contact-form" action="/action_page.php">
+            <form id="contact-form" action="./php/email.php">
                 <button type="submit" disabled style="display: none" aria-hidden="true"></button>
                 <label class="form-titles" for="name"><i class="fa fa-user" aria-hidden="true"></i> Name</label><br>
                 <input class="form-content" type="text" id="name" name="name" value="Your name"><br>
                 <label class="form-titles" for="email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label><br>
-                <input class="form-content" type="text" id="email" name="email" value="email@gmail.com"><br>
+                <input class="form-content" type="email" id="email" name="email" value="email@gmail.com"><br>
                 <label class="form-titles" for="message"><i class="fa fa-rocket"></i> Message</label><br>
                 <span class="resize">
                     <input class="form-content message" type="text" id="message" name="message">
@@ -58,8 +58,14 @@
             </form>
         </div>
     </section>
-    <footer class="footer">
-        <span>&copy; Copyright</span>
+    <footer class="footer bg-dark">
+        <span class="copy-span">&copy; Zarlengo.Net</span>
+        <nav id="navbar-links">
+        <a title="linkedin.com/in/zarlengo" target="_blank" href="https://www.linkedin.com/in/zarlengo/"><img alt="linkedin" src="./images/LI-In-Bug.png"></a>
+        <a title="github.com/Zarlengo" target="_blank" href="https://github.com/Zarlengo"><img alt="github" src="./images/GitHub-Mark-Light-32px.png"></a>
+        </nav>
+        <nav id="navbar-languages">
+        </nav>
     </footer>
 </body>
 </html>

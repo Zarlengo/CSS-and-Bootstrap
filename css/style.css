@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=IBM+Plex+Mono&display=swap');
 
 /******  Document wide elements  ******/
+:root {
+    --main-blue-back-color: #117ebd;
+    --dark-back-font-color: #fff;
+
+    --secondary-back-color: #add8e6;
+    --light-back-font-color: #333;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,7 +20,10 @@
 /*  Common background color  */
 body {
     font-family: 'IBM Plex Mono', monospace;
-    background-color: linen;
+    background-color: var(--secondary-back-color);
+    min-width:400px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+
 }
 
 
@@ -30,7 +41,7 @@ body {
 
 /*  Formatting for the branding  */
 .navbar-brand {
-    background-color: lightseagreen;
+    background-color: var(--main-blue-back-color);
     height: 60px;
     width: 100%;
     margin: 0;
@@ -41,7 +52,7 @@ body {
 .navbar-brand span {
     font-family: 'Amaranth', sans-serif;
     margin: auto;
-    color: white;
+    color: var(--dark-back-font-color);
 }
 
 /*  Formatting for the page links */
@@ -56,34 +67,50 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--dark-back-font-color);
+    text-decoration: none;
 }
 
 .nav-link {
-    color: dimgrey !important;
+    text-decoration: none;
+    color: var(--dark-back-font-color);
 }
 
 .nav-spacer {
-    color: dimgrey;
+    color: var(--dark-back-font-color);
     opacity: 0.5;
 }
 
-.nav-item:hover{
-    background-color: lightseagreen;
+.nav-item:not(.active):hover {
+    background-color: var(--main-blue-back-color);
+    color: var(--dark-back-font-color);
 }
 
+a.active {
+    font-weight: bolder;
+    background-color: var(--secondary-back-color);
+    color: var(--light-back-font-color);
+    border-radius:15%;
+    pointer-events: none;
+}
 
+a:not(.active) {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /******  background tile settings  ******/
 .project-background {
-    background-color: white;
+    background-color: var(--dark-back-font-color);
     margin: 160px 30px 100px 30px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 h2 {    
-    color: lightseagreen;
+    color: var(--main-blue-back-color);
+    font-weight: bold;
 }
 
 .section-brand {
@@ -96,7 +123,7 @@ h2 {
 hr {
     width: 100%;
     opacity: 60%;
-    border: 2px solid dimgrey;
+    border: 2px solid var(--light-back-font-color);;
 }
 
 
@@ -105,9 +132,8 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    border-top: 6px solid lightseagreen;
-    background-color: dimgray;
-    color: lightgrey;
+    border-top: 6px solid var(--main-blue-back-color);
+    color: var(--dark-back-font-color);
     text-align: center;
     width: 100%;
     height: 60px;
@@ -122,6 +148,20 @@ footer > span {
     justify-content: center;
 }
 
+#navbar-links a {
+  float: left;
+  padding: 3px 6px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navbar-links img {
+  height: 25px;
+}
 
 /*  Formatting changes for large screens  */
 @media (min-width: 768px) { 
@@ -132,7 +172,7 @@ footer > span {
 
     .navbar-brand {
         width: 150px;
-        margin: 0 20px;
+        margin: 0 30px;
         justify-content: flex-start;
     }
 

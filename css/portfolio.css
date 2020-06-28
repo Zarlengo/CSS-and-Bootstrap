@@ -9,23 +9,23 @@
 
 /*  Adds images for each project  */
 .project1 {
-    background-image: url(https://via.placeholder.com/300);
+    background-image: url(../images/attendance300_300.png);
 }
 
 .project2 {
-    background-image: url(https://via.placeholder.com/300);
+    background-image: url(../images/sodoku.gif);
 }
 
 .project3 {
-    background-image: url(https://via.placeholder.com/300);
+    background-image: url(../images/path.gif);
 }
 
 .project4 {
-    background-image: url(https://via.placeholder.com/300);
+    background-image: url(../images/production_300_300.png);
 }
 
 .project5 {
-    background-image: url(https://via.placeholder.com/300);
+    background-image: url(../images/cat_and_mouse.gif);
 }
 
 .project6 {
@@ -33,11 +33,15 @@
 }
 
 /*  Fixed sizes for each card image  */
+.card {
+    min-width: 300px;
+}
 .card-image {
     width: 300px;
-    height: 250px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 20px 0 20px 0;
 }
 
@@ -48,13 +52,41 @@
     text-align: center;
     height: 50px;
     width: 100%;
-    background-color: lightseagreen;
+    background-color: var(--main-blue-back-color);
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    color: white;
+    color: var(--dark-back-font-color);
 }
+
+.project-text-container {
+    margin: 20px;
+}
+
+.project-text {
+    font-size: 16px;
+}
+
+.project-text-hover {
+    visibility: hidden;
+    top:0;
+    left:0;
+    width:300px;
+    height:300px;
+    background-color: var(--main-blue-back-color);
+    color: var(--dark-back-font-color);
+}
+
+.card:hover .project-text-hover {
+  visibility: visible;
+}
+
+.card:hover .card-title {
+  visibility: hidden;
+}
+
+
 
 
 /*  Changes card positioning for larger screens */

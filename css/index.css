@@ -8,7 +8,7 @@
     display: inline-block !important;
     width: 246px;
     height: 368px;
-    background-image: url(../Assets/Images/about-me.jpg);
+    background-image: url(../images/about-me.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px 20px 20px 0;
@@ -25,6 +25,4 @@
     .myPicture {
         float: left;
     }
-
-
 }
