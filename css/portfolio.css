@@ -42,7 +42,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 0;
 }
 
 /*  Formatting for the text bar across the image  */
@@ -86,8 +86,29 @@
   visibility: hidden;
 }
 
+.repository {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--light-back-font-color);
+    color: var(--dark-back-font-color);
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
 
+h5 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
+h5:hover, .repository:hover{
+    color: var(--dark-back-font-color);
+}
 
 /*  Changes card positioning for larger screens */
 @media (min-width: 768px) {

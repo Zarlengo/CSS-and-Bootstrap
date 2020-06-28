@@ -96,7 +96,6 @@ a.active {
 
 a:not(.active) {
     text-decoration: none;
-    color: inherit;
 }
 
 
