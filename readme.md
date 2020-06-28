@@ -32,12 +32,12 @@ Additionally within the summary snapshot area, wear items with their current hou
 An animation of a python script which solves sodoku problems. Created initially to solve [Project Euler Problem #96](https://projecteuler.net/problem=96). The methodology that the script uses to determine the solution is what is animated for the viewer. The initial 50 problems from the problem are selectable along with a link to a database containing around 1,000,000 additional problem sets provided from Kyubyong Park on Kaggle.com.
 
 ### Space Invaders Game
-![Gif of the Space Invaders Game](https://projects.zarlengo.net/images/attendance.png)
+![Gif of the Space Invaders Game](https://projects.zarlengo.net/images/cat_and_mouse.gif)
 
 A space invaders inspired game. There are power-ups that fall through out the game boosting level capabilities along with some cheat modes that can be enabled in the beginning of the game. These codes are the same commands as from the original version.
 
 ### Minimum Path Animation
-![Gif of the attendance website](https://projects.zarlengo.net/images/path.png)
+![Gif of the attendance website](https://projects.zarlengo.net/images/path.gif)
 
 Another animation of a python script which determines the least cost path between two points in the system. Box sizing is adjustable through the sliders and the numbers are randomly generated. Inspired from [Project Euler Problem #83](https://projecteuler.net/problem=83).
 
