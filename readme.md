@@ -1,4 +1,4 @@
-# [Responsive portfolio website (https://projects.zarlengo.net/)](https://projects.zarlengo.net/)
+# [Responsive portfolio website (https://portfolio.zarlengo.net/)](https://portfolio.zarlengo.net/)
 Designed around a positive user experience in a mobile environment and expands out as the available screen increases
 
 
